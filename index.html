@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Briauna Clay — Portfolio</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --text:#0b1220; --muted:#546371;
+      --card:#ffffff; --border:#e2e8f0;
+      --a:#7c3aed; --b:#0ea5e9; --link:#075985;
+      --shadow:0 12px 30px rgba(2,6,23,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; background:var(--bg); color:var(--text)}
+    .nav{position:sticky; top:0; z-index:20; backdrop-filter: blur(8px); background:rgba(255,255,255,.7); border-bottom:1px solid var(--border)}
+    .nav .wrap{max-width:1100px; margin:0 auto; padding:10px 20px; display:flex; gap:16px; align-items:center; justify-content:space-between}
+    .brand{font-weight:800}
+    .menu{display:flex; gap:14px; flex-wrap:wrap}
+    .menu a{color:var(--text); text-decoration:none; font-weight:700; opacity:.85}
+    .menu a:hover{opacity:1; text-decoration:underline}
+    header.hero{
+      background: radial-gradient(900px 300px at 20% 10%, rgba(124,58,237,.18), transparent 60%),
+                  radial-gradient(900px 300px at 80% 0%, rgba(14,165,233,.18), transparent 60%),
+                  linear-gradient(180deg, rgba(124,58,237,.10), rgba(14,165,233,.10));
+      border-bottom:1px solid var(--border);
+    }
+    .hero .wrap{max-width:1100px; margin:0 auto; padding:54px 20px; display:grid; grid-template-columns: 140px 1fr; gap:24px; align-items:center}
+    .avatar{width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid rgba(125,211,252,.8); box-shadow:var(--shadow)}
+    h1{font-size: clamp(30px, 5vw, 46px); line-height:1.15; margin:0}
+    .tag{display:inline-block; margin-top:8px; padding:6px 10px; border-radius:999px; background:#eef2ff; border:1px solid var(--border); font-weight:700}
+    .lead{color:var(--muted); margin:10px 0 0}
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .btn{display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:800; padding:12px 16px; border-radius:12px; box-shadow:var(--shadow)}
+    .btn.primary{background:linear-gradient(135deg, var(--a), var(--b)); color:#fff}
+    .btn.secondary{background:var(--card); color:var(--text); border:1px solid var(--border)}
+    .section{max-width:1100px; margin:26px auto; padding:0 20px}
+    .grid{display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+    .card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; transition: transform .15s ease, box-shadow .15s ease}
+    .card:hover{transform: translateY(-4px); box-shadow: 0 14px 28px rgba(2,6,23,.12)}
+    .panel{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:22px; box-shadow: var(--shadow)}
+    .muted{color:var(--muted)}
+    footer{color:#64748b; text-align:center; padding:34px 10px}
+    @media (max-width:640px){
+      .hero .wrap{grid-template-columns:1fr; text-align:center}
+      .cta{justify-content:center}
+    }
+    img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.project img, .tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.avatar {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+  </style>
+</head>
+<body>
+  <nav class="nav" aria-label="Primary">
+    <div class="wrap">
+      <div class="brand">Briauna Clay</div>
+      <div class="menu">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a>
+        <a href="#education">Education</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div><!-- don' remove this div -->
+        <img class="avatar" src="headshot.jpg" alt="Headshot of Briauna Clay">
+      </div>
+      
+      <div>
+        <h1>Hi, I’m Briauna Clay</h1>
+        <span class="tag">S-STEM Scholar | Chemistry Undergraduate Researcher | Student of Applied Mathematics Minor | AAAS Elemental Member</span>
+        <p class="lead">I am a senior year undergraduate student at Keene State College, working towards a B.S. in Chemistry, with a minor in mathematics. I am working in a undergraduate research lab that works on synthesizing a novel organic light-emitting diode complex through common organic and inorganic synthesis and characterization techniques. I am looking for opportunities relating to the inorganic, organic, and physical chemistry fields. </p>
+        <div class="cta">
+          
+          <a class="btn secondary" href="mailto:briauna.clay@ksctrioprograms.org">Email</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="projects" class="section">
+    <h2>💻 Projects</h2>
+    <div class="grid">
+<div class="project">
+  <img src="StarterImage_Science Project Thumbnail.png" alt="Project Thumbnail">
+  <h3>Synthesis of Novel Organic Light-Emitting Diodes</h3>
+  <p><em>Keene State College (Jan 2024 – Present)</em></p>
+  <p>Working on a multi-step synthesis of a novel organic light-emitting diode complex, characterizing intermediates with techniques including glove box handling, NMR, and other analytical methods.</p>
+</div>
+</div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>🧪 Experience</h2>
+    <div class="grid"></div>
+  </section>
+
+  <section id="education" class="section">
+    <h2>🎓 Education</h2>
+    <div class="panel"><p>B.S. Chemistry, Minor in Mathematics — Keene State College, Expected 2026</p></div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>🛠 Skills</h2>
+    <div class="panel"><ul><li>NMR Spectroscopy</li><li>Data Analysis</li><li>Glove Box</li><li>Presenting Posters</li></ul></div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>👋 About</h2>
+    <div class="panel"><p>I am a senior year undergraduate student at Keene State College, working towards a B.S. in Chemistry, with a minor in mathematics. I am working in a undergraduate research lab that works on synthesizing a novel organic light-emitting diode complex through common organic and inorganic synthesis and characterization techniques. I am looking for opportunities relating to the inorganic, organic, and physical chemistry fields.</p></div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>📬 Contact</h2>
+    <div class="panel">
+      <p>Email: <a href="mailto:briauna.clay@ksctrioprograms.org">briauna.clay@ksctrioprograms.org</a> <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/briauna-clay-2093272b6/" target="_blank">https://www.linkedin.com/in/briauna-clay-2093272b6/</a></p></p>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Briauna Clay </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
